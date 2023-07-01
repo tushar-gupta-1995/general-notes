@@ -24,6 +24,9 @@ just one orientation of the graph where no 2 edges cross each other.
 Therefore k4 whose default orientation(a square with 2 diagonals) seems a non planer, is actually planer.
 ## TODO: Try drawing it on a copy and attach k4 here.
 
+# Bipartite Graph
+when a graph can be divided into 2 distinct set of vertices such that within each set, no 2 vertices are connected, but each vertex has a mapping in the other set.
+
 
 
 

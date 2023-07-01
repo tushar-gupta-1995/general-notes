@@ -9,7 +9,7 @@ A graph is an object with the following three sets as attributes:
 # aliases of graph
 complete graphs are prefixed with k followed by number of vertices.
 Refer the below images
-![complete graphs](Graphs/images/graph_types.png)
+![complete graphs](images/graph_types.png)
 
 # Connected graph(undirected):
 For any two pair of vertices in the graph, there is a path that connects them. The path can span multiple other vertices, but should exist for graph to be connected.

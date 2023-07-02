@@ -23,6 +23,8 @@ So if a vector points in the same direction, but its magnitude increases, it is 
 ### Method:
 Multiply the vector by scalar.
 
+![vector scaling notes](images/vector_scaling.jpeg)
+
 ## Vector rotation
 Rotating a vector is changing vector direction without changing its magnitude. So while scaling changes the magnitude but not direction,
 rotation changes the direction but not magnitude.
@@ -32,13 +34,22 @@ since cos^2θ + sin^2θ=1 the magnitude remains same but matrix changes directio
 | cos(θ) -sin(θ) |
 | sin(θ) cos(θ) |
 
+![vector rotation notes](images/vector-rotation.jpeg)
+
 ## Vector shearing
 Shearing a vector is keeping one component constant but changing the other component's magnitude.
 Example take a 2d vector, it can have a component in x-y plane. if we increase the magnitude of y, the vector's direction will change towards y, but it will have same component in x. The overall vector magnitude and direction may change but the component in x remains the same.This is shearing.
 ### Method
+Shear across the x axis or horizontally
 | 1 x |
 | 0 1 |
 
+
+Shear across the y axis or vertically
+| 1 0 |
+| y 1 |
+
+![vector shearing notes](images/vector-shearing.jpeg)
 
 # Vector Addition
 Remember in a vector the position does not matter.

@@ -67,11 +67,12 @@ To simplify this lets play a game called `turtle` , just taking a reference from
 The `turtle` is a 2 dimensional creature but it moves based on **predefined** rules.
 The turtle can move in two linearly independent directions say `i` and `j`.
 **to reiterate** `i` and `j` are linearly independent, so `i` can not be written in form `cj` where `c` is a constant.
-### Challenge for all levels: we will be given displacement in basis of identity vectors which are [1,0],[0,1], we need to find the displacement in new basis vectors based on each stage.
+### GIVEN: we will be given displacement in basis of identity vectors which are [1,0],[0,1]
+### Challenge for all levels: we need to find the displacement in new basis vectors provided in each stage.
 ### stage 1
 Stage 1, is simple `i` and `j` are just `x` and `y`. so `i` = [1,0] and `j` = [0,1].
 A combination of `i` and `j` are the basis vectors for **stage 1** but they also are `identity matrix`
-say turtle moves `a` in `i` and `b` in `j`, to solve the challenge we must
+say turtle moves `a` in `i` and `b` in `j`, to solve the challenge we must solve:
 | 1 0 ||a|
 | y 1 ||b|
 which is just [a,b].

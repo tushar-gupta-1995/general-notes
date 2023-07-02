@@ -8,12 +8,19 @@ But a third axis orthogonal to x-y plane, lets say z axis cannot be represent in
 **summary:** therefore, a set of vectors {v1, v2, v3} is linear indipendent, if v3 cannot be written as cv1 + cv2.
 
 # basis vectors and vector space
-Basis Vectors are a set of linearly independent vectors, determine how an object moves in the vector space.
-vector space is the space covered by the bounds of linear combination of the said basis vectors.
+A set of linearly independent vectors, determine how an object moves in the vector space.
+vector space is the space covered by the bounds of linear combination of the vectors.
 
-# Graham Schmidt Process
-a set of basis vectors, is given lets call them {v1,v2,v3,...vn}.
-We need to find a set of unit vectors lets call them {e1,e2,e3...en}, such that each unit vector is orthogonal to all other unit vectors and e1 is in direction of v1, while e2 has the component of v2 perpendicular to v1, e3 has component perpendicular to both v1 and v2.
-***Orthonormality:** a set of unit vectors orthogonal to each other.
-![graham-schmidt notes](images/graham-schmidt.jpeg)
-Refer this for python code for computing graham-schmidt: [code](graham-schmidt.py)
+# Vector Representation
+a vector is represented by a column of values.each component of vector represents a movement in a unique direction.
+the magnitude of direction in each component is the {value of each component * the unit vector in that direction}
+The resultant direction is the summation of vector additions of each component.
+
+# Vector Addition
+Remember in a vector the position does not matter.
+Assume walking 1 km in north and **THEN** 1 km in south from an **origin point** and reach a **destination point**
+Draw a straight line from **origin** to **destination** and thats your summation vector or vector addition of 1km north and 1km south.
+Notice the addition is commutative that is 1S + 1N = as !N + 1S.
+Refer the image for more detail:
+![vector addition notes](images/vector-addition.jpeg)
+

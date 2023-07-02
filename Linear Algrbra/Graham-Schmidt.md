@@ -14,4 +14,6 @@ vector space is the space covered by the bounds of linear combination of the vec
 # Graham Schmidt Process
 a set of basis vectors, is given lets call them {v1,v2,v3,...vn}.
 We need to find a set of unit vectors lets call them {e1,e2,e3...en}, such that each unit vector is orthogonal to all other unit vectors and e1 is in direction of v1, while e2 has the component of v2 perpendicular to v1, e3 has component perpendicular to both v1 and v2.
+***Orthonormality:** a set of unit vectors orthogonal to each other.
 ![graham-schmidt notes](images/graham-schmidt.jpeg)
+Refer this for python code for computing graham-schmidt: [code](graham-schmidt.py)

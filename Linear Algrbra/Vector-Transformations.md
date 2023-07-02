@@ -59,6 +59,31 @@ Notice the addition is commutative that is 1S + 1N = as !N + 1S.
 Refer the image for more detail:
 ![vector addition notes](images/vector-addition.jpeg)
 
+# Vector Multiplication
+Vector multiplication is applying new basis vectors to a vector.
+To simplify this lets play a game called `turtle` , just taking a reference from logo, the first game taught at school
 
+## turtle game rules
+The `turtle` is a 2 dimensional creature but it moves based on **predefined** rules.
+The turtle can move in two linearly independent directions say `i` and `j`.
+**to reiterate** `i` and `j` are linearly independent, so `i` can not be written in form `cj` where `c` is a constant.
+### Challenge for all levels: we will be given displacement in basis of identity vectors which are [1,0],[0,1], we need to find the displacement in new basis vectors based on each stage.
+### stage 1
+Stage 1, is simple `i` and `j` are just `x` and `y`. so `i` = [1,0] and `j` = [0,1].
+A combination of `i` and `j` are the basis vectors for **stage 1** but they also are `identity matrix`
+say turtle moves `a` in `i` and `b` in `j`, to solve the challenge we must
+| 1 0 ||a|
+| y 1 ||b|
+which is just [a,b].
+### stage 2
+Stage 2, is little complicated `i` and `j` are [i1,i2],[j1,j2], which is orthogonal but not identity.
+A combination of `i` and `j` are the basis vectors for **stage 2**
+say turtle moves `a` in `i` and `b` in `j` this can just be written as vector multiplication of:
+| i1 j1||a|
+| i2 j2||b|
 
+### why this game: 
+This game illustrates what matrix multiplication does. IT applies basis vectors on a given vector and tells us what will the vector be in the new basis vectors.
+**THAT IS WHY MATRIX MULTIPLICATION IS NOT COMMUTATIVE THAT IS AB =\= BA**
+SINCE THE FIRST MATRIX IS THE BASIS AND SECOND IS THE VECTOR BEING TRANSFORMED, B BEING TRANSFORMED IN A'S BASIS IS DIFFERENT THEN A BEING TRANSFORMED IN B'S BASIS.
 

@@ -85,6 +85,6 @@ say turtle moves `a` in `i` and `b` in `j` this can just be written as vector mu
 
 ### why this game: 
 This game illustrates what matrix multiplication does. IT applies basis vectors on a given vector and tells us what will the vector be in the new basis vectors.
-**THAT IS WHY MATRIX MULTIPLICATION IS NOT COMMUTATIVE THAT IS AB =\= BA**
+**THAT IS WHY MATRIX MULTIPLICATION IS NOT COMMUTATIVE THAT IS AB ≠ BA**
 SINCE THE FIRST MATRIX IS THE BASIS AND SECOND IS THE VECTOR BEING TRANSFORMED, B BEING TRANSFORMED IN A'S BASIS IS DIFFERENT THEN A BEING TRANSFORMED IN B'S BASIS.
 

@@ -16,6 +16,30 @@ a vector is represented by a column of values.each component of vector represent
 the magnitude of direction in each component is the {value of each component * the unit vector in that direction}
 The resultant direction is the summation of vector additions of each component.
 
+# Types of vector transformation
+## Vector scaling
+Scaling a vector is multiplying a vector with a scalar quantity. scaling is like stretching the vector without changing anything else.
+So if a vector points in the same direction, but its magnitude increases, it is being scaled.
+### Method:
+Multiply the vector by scalar.
+
+## Vector rotation
+Rotating a vector is changing vector direction without changing its magnitude. So while scaling changes the magnitude but not direction,
+rotation changes the direction but not magnitude.
+### Method:
+Convention is to multiply a vector with the below rotation matrix.
+since cos^2θ + sin^2θ=1 the magnitude remains same but matrix changes direction.
+| cos(θ) -sin(θ) |
+| sin(θ) cos(θ) |
+
+## Vector shearing
+Shearing a vector is keeping one component constant but changing the other component's magnitude.
+Example take a 2d vector, it can have a component in x-y plane. if we increase the magnitude of y, the vector's direction will change towards y, but it will have same component in x. The overall vector magnitude and direction may change but the component in x remains the same.This is shearing.
+### Method
+| 1 x |
+| 0 1 |
+
+
 # Vector Addition
 Remember in a vector the position does not matter.
 Assume walking 1 km in north and **THEN** 1 km in south from an **origin point** and reach a **destination point**
@@ -23,4 +47,7 @@ Draw a straight line from **origin** to **destination** and thats your summation
 Notice the addition is commutative that is 1S + 1N = as !N + 1S.
 Refer the image for more detail:
 ![vector addition notes](images/vector-addition.jpeg)
+
+
+
 

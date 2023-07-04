@@ -20,6 +20,9 @@ The resultant direction is the summation of vector additions of each component.
 ## Vector scaling
 Scaling a vector is multiplying a vector with a scalar quantity. scaling is like stretching the vector without changing anything else.
 So if a vector points in the same direction, but its magnitude increases, it is being scaled.
+HOWEVER scaling a vector in only one direction while keeping the other components constant will indeed change the direction of the vector.
+Imagine i have a vector having some component in unit vectors i and j where i an j are linearly indipendent...scaling vector in only i 
+will change direction and so will scaling in only j.
 ### Method:
 Multiply the vector by scalar.
 

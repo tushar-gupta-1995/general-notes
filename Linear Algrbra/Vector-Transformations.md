@@ -64,6 +64,12 @@ Refer the image for more detail:
 
 # Vector Multiplication
 Vector multiplication is applying new basis vectors to a vector.
+Imagine a simple 2d x y plane, in a single move you either move 1 unit in axis, or 1 unit in y axis, with a combination of these movements you traverse the x y plane. so if you move one unit in x and then 2 units in y, you move somewhat diagonally.
+but now imagine tilting the axis lets call tilted x-y plane., now in a single move you can have component in both x and y axis, now in a single move you traverse diagonally in the original x-y plane..lets c
+The question is if you move 1 unit in tilted x, and 2 unit in tilted y, then how much you move in the original untitled x-y plane.
+
+Matrix multiplication provides answer to above, in AB A represents the basis vectors or they represent the axis, and B represents the vectors to which the transformation is being applied.
+
 To simplify this lets play a game called `turtle` , just taking a reference from logo, the first game taught at school
 
 ## turtle game rules

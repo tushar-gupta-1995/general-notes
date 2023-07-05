@@ -1,6 +1,19 @@
 # Vectors
 Vectors are just representing direction AND magnitude and NOT position. Therefore it is possible to shift position of vector without changing the meaning of vector. As long as direction and magnitude is preserved, its the same vector regardless of position.
 
+# Key Terms
+
+## Orthogonality
+Two vectors are said to be orthogonal if the angle between them is 90 or they are perpendicular
+
+## Orthonormality
+Two orthogonal vectors having unit length or magnitude as 1, are `orthonormal` vectors.
+
+## Normalization
+Preserving the length of a vector while converting it to unit length is called normalization.
+This can be done by dividing the vector by its magnitude.
+Example a vector 3x can be divided by 3 to get its normalized vector which is just x( having magnitude 1 but pointing in same direction as 3x)
+
 # Linear independence
 Two or more vectors are said to be linearly independent if none of them can be written as a linear combination of the others. On the contrary, if at least one of them can be written as a linear combination of the others, then they are said to be linearly dependent.**example:** consider a x-y plane where x is the horizontal axis and y is the vertical axis.
 Now a vector say 2x+3y, is not linearly independent or linearly dependent on the x-y plane.
@@ -100,5 +113,9 @@ This game illustrates what matrix multiplication does. IT applies basis vectors 
 SINCE THE FIRST MATRIX IS THE BASIS AND SECOND IS THE VECTOR BEING TRANSFORMED, B BEING TRANSFORMED IN A'S BASIS IS DIFFERENT THEN A BEING TRANSFORMED IN B'S BASIS.
 
 # Determinants
-
+Now that we know matrix multiplication is the change of a vector in a given basis and a given basis is just a new axis which can be tilted, a question arises?
+How much does a given basis vector transform a vector?..Since the plane is evenly spaced, the magnitude of the transformation can be determined, and that's exactly what a `Determinant` is.
+Imagine a 2d matrix, we know each column represents a basis vector, but our matrix has a problem...
+lets say our 2d matrix has 2 columns, we will call them a and b.
+now we discover b = 3a...this means a and b are not linearly independent, they lie on the same line...what will happen if we transform a vector in this new matrix?
 

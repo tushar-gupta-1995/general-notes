@@ -14,6 +14,13 @@ Preserving the length of a vector while converting it to unit length is called n
 This can be done by dividing the vector by its magnitude.
 Example a vector 3x can be divided by 3 to get its normalized vector which is just x( having magnitude 1 but pointing in same direction as 3x)
 
+# Projection
+Projection is if a vector has some component in another vector.
+Consider sitting at tip of one vector with a torch and pointing torch perpendicularly on another vector, the distance between, the point at which light will hit the other vector and origin is projection.
+
+## Dot product
+TODO : Attach image.
+
 # Linear independence
 Two or more vectors are said to be linearly independent if none of them can be written as a linear combination of the others. On the contrary, if at least one of them can be written as a linear combination of the others, then they are said to be linearly dependent.**example:** consider a x-y plane where x is the horizontal axis and y is the vertical axis.
 Now a vector say 2x+3y, is not linearly independent or linearly dependent on the x-y plane.

@@ -1,0 +1,11 @@
+Decoder : takes n bit input and generates all possible 2^n output, one bit enabler to enable disable the circuit
+
+Encoder : takes 2^n bits input and generates a n bit output, one bit enabler to enable disable the circuit
+
+Multiplexer: takes 2^n bits input, and has n control lines, generates exactly one output
+
+Demultiplexer: takes 1 input and has n control lines, generates 2^n output
+
+If the input of demux is changed to be enabler, and control lines are changed to be input then it becomes decoder/
+
+Also refer the link: https://www.tutorialspoint.com/computer_logical_organization/combinational_circuits.htm

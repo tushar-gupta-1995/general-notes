@@ -76,4 +76,13 @@ Question:
 # Remember: 
 ![Alt text](image-6.png)
 
+
+# Explaining the  digital circuit for memory hierarchy
 ![Alt text](image-10.png)
+
+remember mux, it takes 2^n inputs has n control lines and generates 1 output.
+in the above diagram, n control lines are n bits for cache lines, and input is attached to 2^n number of cache lines formed from those n bits.
+now based on control lines only one output is generated which maps to the CL expected to hold the block, but before inspecting the block we pass it through comparator to match tag, if tag matches it means CL holds the block.
+
+Remember in direct mapping each block can be in a specific cache line, either its in that cache line or its not in the cache.
+

@@ -86,3 +86,5 @@ now based on control lines only one output is generated which maps to the CL exp
 
 Remember in direct mapping each block can be in a specific cache line, either its in that cache line or its not in the cache.
 
+# Important: In direct mapping each cache line needs to have a tag, and tag symbolises if the specific MM block exists in the CL,
+

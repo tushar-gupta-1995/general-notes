@@ -75,3 +75,5 @@ Question:
 
 # Remember: 
 ![Alt text](image-6.png)
+
+![Alt text](image-10.png)

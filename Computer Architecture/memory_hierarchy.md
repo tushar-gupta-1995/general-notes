@@ -51,3 +51,27 @@ Refer the diagrams
 
 ![memory distribution amongst cache and MM](image-1.png)
 ![Alt text](image-2.png)
+
+
+
+Lets look at division of data in MM in other way
+
+- MM is divided in blocks
+- each block is divided into words
+
+Suppose each block has n words and word has m bits
+- Take last log base 2(n) of index of word in binary and it tells the block offset
+- remaining(n-log base 2(n)) bits tell the position of block in MM
+
+Now suppose in direct mapping each CL has k bits mapped
+- the last log base 2(k) of (n-log base 2(n)) tell the CL of the block
+- the remaining (n-log base 2(n)) - log base 2(k) tell the tag of the block
+
+Refer the below image:
+![Alt text](image-3.png)
+
+Question:
+![Alt text](image-4.png)
+
+# Remember: 
+![Alt text](image-6.png)

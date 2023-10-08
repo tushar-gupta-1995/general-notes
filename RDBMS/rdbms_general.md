@@ -29,6 +29,13 @@ The four standard isolation levels are:
 
 - Serializable: This is the highest isolation level where a transaction is executed as if it were the only transaction in the system. All transactions must be executed sequentially, which ensures that there are no dirty reads, non-repeatable reads, or phantom reads.
 
+### Consistency: 
+If isolation, durability, atomicity holds true then consistency automatically holds true.
+But consistency refers to data as a whole being consistent.
+so if debit happens from account a and credited to account b, the sum of account a and b should be same before and after:
+
+Example of consistency is below gate question:
+![Alt text](image-6.png)
 ### Transaction
 a bunch of instructions bound in a bundle such that they behave as a single instruction.
 

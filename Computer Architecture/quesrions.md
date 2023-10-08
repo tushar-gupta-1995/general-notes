@@ -23,3 +23,9 @@
 ![Alt text](image-23.png)
 
 ![Alt text](image-24.png)
+
+![Alt text](image-25.png)
+
+![Alt text](image-26.png)
+
+https://unacademy.com/class/cache-management-part-i/URL05AQW

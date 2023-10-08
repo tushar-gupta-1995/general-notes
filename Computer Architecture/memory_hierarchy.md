@@ -1,4 +1,4 @@
-CPU -> Register -> Cache => MM (Ram) -> SM(Hard disk)
+CPU -> Register -> Cache => MM (Ram, Physical memory) -> SM(Hard disk,Logical memory LM)
 
 Each memory is divided into equal sizes, each division is called:
 - page in SM
@@ -101,3 +101,16 @@ Remember in direct mapping each block can be in a specific cache line, either it
 
  # For Set associative remeber !!!
 ![Alt text](image-18.png)
+
+
+# Data replacement in cache
+
+## Modified bit
+suppose data comes in the cache and is 'A', suppos CPU modifies it to 'B'
+Now cache has 'B' for mem address but MM and LM have 'A' for the same.
+One way to resolve this is to not update immeditely, but add a modified bit extra to cache.
+if this is set to 1, when data is evicted from cache, first its value is updated in MM.
+
+## Valid bit
+But sometimes cache contains garbage value, to do this we add a valid bit to the cache.
+If this is set to 1, then it means the cache lines contain garbage value

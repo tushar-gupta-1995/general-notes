@@ -88,3 +88,16 @@ Remember in direct mapping each block can be in a specific cache line, either it
 
 # Important: In direct mapping each cache line needs to have a tag, and tag symbolises if the specific MM block exists in the CL,
 
+# ASSOCIATIVE MAPPINTG
+
+![ASSOCIATIVE MAPPING](image-11.png)
+
+
+# SET ASSOCIATIVE MAPPING
+
+![SET ASSOCIATIVE MAPPING](image-12.png)
+
+![question](image-13.png)
+
+ # For Set associative remeber !!!
+![Alt text](image-18.png)

@@ -10,6 +10,25 @@
 - Atomicity: As we can see in the below image, the transaction begins with few inserts, if any insert fails it rollbacks all the previous inserts.
 
 ![Atomicity example](image.png)
+
+![Atomicity example-2](image-3.png)
+
+![Isolation example](image-4.png)
+
+![Durability](image-5.png)
+
+### Isolation:
+Transaction isolation levels are used in database management systems (DBMS) to control the level of interaction between concurrent transactions. 
+
+The four standard isolation levels are:
+- Read Uncommitted: This is the lowest level of isolation where a transaction can see uncommitted changes made by other transactions.   This can result in dirty reads, non-repeatable reads, and phantom reads.
+
+- Read Committed: In this isolation level, a transaction can only see changes made by other committed transactions. This eliminates dirty reads but can still result in non-repeatable reads and phantom reads.
+
+- Repeatable Read: This isolation level guarantees that a transaction will see the same data throughout its duration, even if other transactions commit changes to the data. However, phantom reads are still possible.
+
+- Serializable: This is the highest isolation level where a transaction is executed as if it were the only transaction in the system. All transactions must be executed sequentially, which ensures that there are no dirty reads, non-repeatable reads, or phantom reads.
+
 ### Transaction
 a bunch of instructions bound in a bundle such that they behave as a single instruction.
 

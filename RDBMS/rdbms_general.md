@@ -29,6 +29,12 @@ The four standard isolation levels are:
 
 - Serializable: This is the highest isolation level where a transaction is executed as if it were the only transaction in the system. All transactions must be executed sequentially, which ensures that there are no dirty reads, non-repeatable reads, or phantom reads.
 
+#### Concurrency
+
+Refer the below image:
+
+![Alt text](image-8.png)
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.
@@ -57,7 +63,9 @@ In essence transaction are a bunch of instructions combined together or bound to
 #### Transaction States
 - Till the time transaction state is executing its active.
 - When the instruction is executed but not committed its called `partially commited.` In other words instructions have executed but commit command has not executed or is executing but has not completed.
+- till here if any failure happens all changes are rolled back.
 - when the results of instructions are completely commited its called `commited`
+
 
 
 ![Alt text](image-7.png)

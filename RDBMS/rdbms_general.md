@@ -54,6 +54,14 @@ In essence transaction are a bunch of instructions combined together or bound to
 
 ![Properties of transaction](image-2.png)
 
+#### Transaction States
+- Till the time transaction state is executing its active.
+- When the instruction is executed but not committed its called `partially commited.` In other words instructions have executed but commit command has not executed or is executing but has not completed.
+- when the results of instructions are completely commited its called `commited`
+
+
+![Alt text](image-7.png)
+
 # Schema vs Instance:
 - Schema: strucure of data
 - Instance: snapshot of data at any given time.

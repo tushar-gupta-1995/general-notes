@@ -31,9 +31,21 @@ The four standard isolation levels are:
 
 #### Concurrency
 
+![Alt text](image-8.png)
+
+##### Lost update/ write-write problem
+- consider transaction 1 is partially commited and is writing some value, and transaction 2 starts after transaction 1 and transaction 2 commits before transaction 1 is commited, and then transaction 1 is commited after, in this case transaction 2 overwrites transaction 
+` Remember due to isolation property each transaction is unaware of all others.`
+
 Refer the below image:
 
-![Alt text](image-8.png)
+![Alt text](image-9.png)
+
+##### Lost update/ write-write problem
+
+Read an uncommited transaction, which might get rolled back.
+![Alt text](image-10.png)
+
 
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.

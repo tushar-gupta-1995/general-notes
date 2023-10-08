@@ -41,7 +41,7 @@ Refer the below image:
 
 ![Alt text](image-9.png)
 
-##### Lost update/ write-write problem
+##### Dirty Read/ read-write problem
 
 Read an uncommited transaction, which might get rolled back.
 ![Alt text](image-10.png)

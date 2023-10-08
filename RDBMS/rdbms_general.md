@@ -36,6 +36,9 @@ so if debit happens from account a and credited to account b, the sum of account
 
 Example of consistency is below gate question:
 ![Alt text](image-6.png)
+
+NOTE: here atomicity and consistency may seeem intertwined, but remember atomicity is either execute fully or not, while consistency is focussed on integrity, even though atomicity is critical for ensuring integrity, they are different properties.
+
 ### Transaction
 a bunch of instructions bound in a bundle such that they behave as a single instruction.
 

@@ -58,6 +58,10 @@ Question on dirty read:
 
 ![Alt text](image-12.png)
 
+##### Solution to all above: schedule
+
+![Alt text](image-15.png)
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

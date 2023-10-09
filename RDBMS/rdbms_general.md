@@ -67,6 +67,24 @@ Question on dirty read:
 
 ![Alt text](image-16.png)
 
+Putting all transactions in a queue and execute them one by one.
+The next transaction only begins when previous completes.
+
+**Note** the order of transaction in which they are inserted to queue does not matter.
+
+Assume 3 transactions are there, T1, T2 and T3,
+Now for first one to run we have 3 choices, T1/T2/T3
+for second we have 2 and last we have 1.
+
+This means there are 3! ways to achieve this.
+
+so for n transactions there are n! schedules.
+
+
+###### Non Serial Schedule
+
+![Alt text](image-17.png)
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

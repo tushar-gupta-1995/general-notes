@@ -119,3 +119,17 @@ If this is set to 1, then it means the cache lines contain garbage value
 CPU usually keeps data and instruction cache seperately, as L1, and then keeps a L2 cache and then MM comes usually.
 
 ![Alt text](image-28.png)
+
+# Cache replacement policies
+
+General approach: First in first out, note: regardless of its frequency of use we just remove the first enetered element.
+While easy, its glaring flaw is the most used element could also be the first element that eneted the cache.
+
+![Alt text](image-30.png)
+
+## Compulsory miss: 
+Since in the beginning the cache is empty, they are the compulsory miss till cache is filled.
+
+### Belady's anamoly:
+which states that increasing CL increases cache misses only happens in the FIFO cache replacement and not LRU.
+Also its not guaranteed to always happen in FIFO, but may happen.

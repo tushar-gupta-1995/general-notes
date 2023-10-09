@@ -28,4 +28,4 @@
 
 ![Alt text](image-26.png)
 
-https://unacademy.com/class/cache-management-part-i/URL05AQW
+![Alt text](image-27.png)

@@ -85,6 +85,14 @@ so for n transactions there are n! schedules.
 
 ![Alt text](image-17.png)
 
+**Remember if there are n things to be arranged  such that k out of them always appear in the same order then the answer is n!/k!**
+
+Now in non serial, we cannot change the individual order of instructions in a transaction but we can interweave them with instructions of other transaction, As long as no order of instruction in any transaction is violated.
+
+Now suppose i have two transactions t1 and t2 with 2 and 4 instructions respectively and i want to find the number of non serial schedules then the answer is:
+total 6 transactions out of them 2 of t1 are in one order and 4 of t2 in another, but they are interwovem
+so 6!/2!.4!
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

@@ -36,6 +36,7 @@ The four standard isolation levels are:
 ##### Lost update/ write-write problem
 - consider transaction 1 is partially commited and is writing some value, and transaction 2 starts after transaction 1 and transaction 2 commits before transaction 1 is commited, and then transaction 1 is commited after, in this case transaction 2 overwrites transaction 
 ` Remember due to isolation property each transaction is unaware of all others.`
+- `blind write`: if the second transaction just writes without reading.
 
 Refer the below image:
 
@@ -46,6 +47,16 @@ Refer the below image:
 Read an uncommited transaction, which might get rolled back.
 ![Alt text](image-10.png)
 
+Question on dirty read: 
+![Alt text](image-13.png)
+
+##### Unrepeatable read problem
+
+![Alt text](image-11.png)
+
+##### Phantom read problem
+
+![Alt text](image-12.png)
 
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.

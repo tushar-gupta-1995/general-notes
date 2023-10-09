@@ -114,3 +114,8 @@ if this is set to 1, when data is evicted from cache, first its value is updated
 ## Valid bit
 But sometimes cache contains garbage value, to do this we add a valid bit to the cache.
 If this is set to 1, then it means the cache lines contain garbage value
+
+## Data and instruction cache
+CPU usually keeps data and instruction cache seperately, as L1, and then keeps a L2 cache and then MM comes usually.
+
+![Alt text](image-28.png)

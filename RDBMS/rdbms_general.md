@@ -91,7 +91,8 @@ Now in non serial, we cannot change the individual order of instructions in a tr
 
 Now suppose i have two transactions t1 and t2 with 2 and 4 instructions respectively and i want to find the number of non serial schedules then the answer is:
 total 6 transactions out of them 2 of t1 are in one order and 4 of t2 in another, but they are interwovem
-so 6!/2!.4!
+so 6!/2!.4!-2
+The 2 is subtracted as in cases where t1 occurs first completely before t2 or t2 completely occurs before t1 are serial.
 
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.

@@ -114,6 +114,22 @@ Numbered scenario in below image:
 - Scenario 3: Same Dataset But Read, so no conflict
 - Scenario 4,5,6: Same dataset, at least one transaction write, so conflict
 
+**Conclusion for conflict**
+Two transactions are said to be conflicting if:
+- instructions are different
+- operate on same value
+- at least one of them is a write 
+
+We can run non conflicting transactions concurrently but not conflicting.
+
+
+###### Conflict equivalent schedule
+
+![Alt text](image-19.png)
+
+**Question:**
+![Alt text](image-20.png)
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

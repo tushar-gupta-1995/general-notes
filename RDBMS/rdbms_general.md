@@ -94,6 +94,14 @@ total 6 transactions out of them 2 of t1 are in one order and 4 of t2 in another
 so 6!/2!.4!-2
 The 2 is subtracted as in cases where t1 occurs first completely before t2 or t2 completely occurs before t1 are serial.
 
+**Remember by default non serial might not guarantee consistency, since of T1 reads after T2 writes it might lead to the dirty read problem..or it might lead to all above concurrency issues.**
+
+
+**PROBLEM:** Serial is slow and consistent, Non serial is fast but inconsistent
+
+**SOLUTION** if we can prove given non serial transaction have the property of serial transaction, then process the transaction non serially.
+
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

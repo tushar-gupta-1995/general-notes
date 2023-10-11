@@ -102,6 +102,18 @@ The 2 is subtracted as in cases where t1 occurs first completely before t2 or t2
 **SOLUTION** if we can prove given non serial transaction have the property of serial transaction, then process the transaction non serially.
 
 
+###### Solution for Non Serial Schedule
+
+Numbered scenario in below image:
+
+![Alt text](image-18.png)
+
+**Based on above image lets discuss scenarios**
+- Scenario 1: why concurrency wont be an issue: READ and Different Data set, so no conflict
+- Scenario 2: Different dataset, so no conflict
+- Scenario 3: Same Dataset But Read, so no conflict
+- Scenario 4,5,6: Same dataset, at least one transaction write, so conflict
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

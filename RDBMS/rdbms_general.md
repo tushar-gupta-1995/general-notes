@@ -153,6 +153,22 @@ We can run non conflicting transactions concurrently but not conflicting.
 
 ![Alt text](image-32.png)
 
+
+###### Non recoverable schedule
+
+![Alt text](image-33.png)
+
+
+###### recoverable schedule
+
+![Alt text](image-34.png)
+
+###### cascading rollback schedule
+
+![Alt text](image-35.png)
+
+
+
 ###### Blind Write:
  Performing the Writing operation (updation), without reading operation, a such write operation is known as a blind write. If no blind write exists, then the schedule must be a non-View-Serializable schedule.
 

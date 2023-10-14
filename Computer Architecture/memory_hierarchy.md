@@ -141,3 +141,11 @@ Also its not guaranteed to always happen in FIFO, but may happen.
 ![Alt text](image-31.png)
 
 **Value** acts as a reference for other implementable algos
+
+## Approach 2: LRU:
+![Alt text](image-33.png)
+
+
+
+## Types of cache miss:
+![Alt text](image-32.png)

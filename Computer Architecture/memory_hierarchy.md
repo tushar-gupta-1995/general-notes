@@ -139,3 +139,5 @@ Also its not guaranteed to always happen in FIFO, but may happen.
 ## Approach 2: Optimlal: remove that which will not be used till max time (theoretical but not implementable as we do not know in future what will be used)
 
 ![Alt text](image-31.png)
+
+**Value** acts as a reference for other implementable algos

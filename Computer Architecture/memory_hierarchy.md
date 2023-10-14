@@ -133,3 +133,9 @@ Since in the beginning the cache is empty, they are the compulsory miss till cac
 ### Belady's anamoly:
 which states that increasing CL increases cache misses only happens in the FIFO cache replacement and not LRU.
 Also its not guaranteed to always happen in FIFO, but may happen.
+
+## Approach 1: fifo
+
+## Approach 2: Optimlal: remove that which will not be used till max time (theoretical but not implementable as we do not know in future what will be used)
+
+![Alt text](image-31.png)

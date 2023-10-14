@@ -145,6 +145,10 @@ We can run non conflicting transactions concurrently but not conflicting.
 - If a cycle exists in the graph it is NOT conflict serialisable
 - In other words if instructions of transactions can be topologically sorted, then it is Conflict Serialisable
 
+![Alt text](image-30.png)
+
+###### Blind Write:
+ Performing the Writing operation (updation), without reading operation, a such write operation is known as a blind write. If no blind write exists, then the schedule must be a non-View-Serializable schedule.
 
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.

@@ -140,6 +140,12 @@ We can run non conflicting transactions concurrently but not conflicting.
 **Question:**
 ![Alt text](image-20.png)
 
+###### Conflict Serialisable schedule
+- Design instructions of transactions in a precedence graph
+- If a cycle exists in the graph it is NOT conflict serialisable
+- In other words if instructions of transactions can be topologically sorted, then it is Conflict Serialisable
+
+
 ### Consistency: 
 If isolation, durability, atomicity holds true then consistency automatically holds true.
 But consistency refers to data as a whole being consistent.

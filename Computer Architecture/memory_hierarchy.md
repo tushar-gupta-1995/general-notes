@@ -153,3 +153,15 @@ Also its not guaranteed to always happen in FIFO, but may happen.
 **Sample Question**
 
 ![Alt text](image-34.png)
+
+## Cache coherence problem:
+
+![Alt text](image-42.png)
+
+### Write through:
+
+![Alt text](image-43.png)
+
+### Write back:
+
+![Alt text](image-44.png)

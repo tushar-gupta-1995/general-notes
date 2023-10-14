@@ -149,3 +149,7 @@ Also its not guaranteed to always happen in FIFO, but may happen.
 
 ## Types of cache miss:
 ![Alt text](image-32.png)
+
+**Sample Question**
+
+![Alt text](image-34.png)

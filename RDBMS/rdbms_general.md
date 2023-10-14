@@ -63,6 +63,16 @@ Question on dirty read:
 ![Alt text](image-15.png)
 
 
+##### Types of schedule 
+![Alt text](image-29.png)
+
+Legend for the above image:
+- S = Serialisable
+- C = Consistent
+- NS = Non serialisable
+- CS = conflict serialisable
+- VS = View serialisable
+
 ###### Serial Schedule
 
 ![Alt text](image-16.png)
@@ -164,6 +174,9 @@ In essence transaction are a bunch of instructions combined together or bound to
 
 
 ![Alt text](image-7.png)
+
+
+
 
 # Schema vs Instance:
 - Schema: strucure of data

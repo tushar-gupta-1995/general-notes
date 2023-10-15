@@ -187,6 +187,8 @@ No read and write allowed on an uncommited written dataset.
 
 
 
+
+
 ###### Blind Write:
  Performing the Writing operation (updation), without reading operation, a such write operation is known as a blind write. If no blind write exists, then the schedule must be a non-View-Serializable schedule.
 

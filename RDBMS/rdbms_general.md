@@ -234,4 +234,22 @@ In essence transaction are a bunch of instructions combined together or bound to
 - Schema: strucure of data
 - Instance: snapshot of data at any given time.
 
+# Concurrency control
 
+![Alt text](image-46.png)
+
+## Timestamp based method
+
+![Alt text](image-47.png)
+
+
+## Lock based method
+
+While operating on the data item, lock it.
+
+![Alt text](image-48.png)
+
+
+## Validation based method
+
+![Alt text](image-49.png)

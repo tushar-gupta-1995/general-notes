@@ -181,6 +181,8 @@ We can run non conflicting transactions concurrently but not conflicting.
 
 ###### Strict schedule
 
+No read and write allowed on an uncommited written dataset.
+
 ![Alt text](image-39.png)
 
 

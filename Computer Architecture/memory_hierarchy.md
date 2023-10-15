@@ -105,7 +105,7 @@ Remember in direct mapping each block can be in a specific cache line, either it
 
 # Data replacement in cache
 
-## Modified bit
+## Modified bit also known as Dirty bit
 suppose data comes in the cache and is 'A', suppos CPU modifies it to 'B'
 Now cache has 'B' for mem address but MM and LM have 'A' for the same.
 One way to resolve this is to not update immeditely, but add a modified bit extra to cache.
@@ -114,6 +114,12 @@ if this is set to 1, when data is evicted from cache, first its value is updated
 ## Valid bit
 But sometimes cache contains garbage value, to do this we add a valid bit to the cache.
 If this is set to 1, then it means the cache lines contain garbage value
+
+## Reference bit
+Reference bit set to 1 means that this block is used recently, if its 0 it means its not used recently.
+So even when a modified bit being 1 indicates that additional cost will be incurred in writing its value to MM, before evicting it.
+if its reference bit is 0, it might still be evicted, since its LRU(Least recently used.)
+
 
 ## Data and instruction cache
 CPU usually keeps data and instruction cache seperately, as L1, and then keeps a L2 cache and then MM comes usually.

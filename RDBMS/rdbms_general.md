@@ -167,6 +167,22 @@ We can run non conflicting transactions concurrently but not conflicting.
 
 ![Alt text](image-35.png)
 
+###### cascadeless rollback schedule
+
+![Alt text](image-36.png)
+
+
+![Alt text](image-37.png)
+
+###### Deciding if schedule is cascadeless/cascading and recoverable/cascading and not recoverable
+
+![Alt text](image-38.png)
+
+
+###### Strict schedule
+
+![Alt text](image-39.png)
+
 
 
 ###### Blind Write:

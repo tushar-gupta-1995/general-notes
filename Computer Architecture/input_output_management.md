@@ -37,4 +37,8 @@ Async: send a strobe to notify data request and ack to acknowledge data recieved
 
 ![Alt text](image-60.png)
 
+**3 way handshake**
+
+![Alt text](image-61.png)
+
 

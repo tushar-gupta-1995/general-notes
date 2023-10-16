@@ -41,4 +41,31 @@ Async: send a strobe to notify data request and ack to acknowledge data recieved
 
 ![Alt text](image-61.png)
 
+![Alt text](image-62.png)
 
+![Alt text](image-63.png)
+
+# Programmed input output
+
+![Alt text](image-64.png)
+
+- I/O device puts data valid on the bus
+- Interface updates the data in register and puts status flag as true
+- CPU reads the status flag, if true pulls data from register
+- Once pulled data, notifies interface and it puts status flag as false.
+
+## Problem
+**Busy Waiting:** CPU keeps listeningon status flag till its ready, wastes resources (**busy waiting**)
+
+
+# Interrupt initated I/O
+
+![Alt text](image-65.png)
+
+- I/O device sends a request, sent as interrupt
+- CPU is executing instructions
+- after completing instruction cpu checks interrupt and processes it
+- **ISR(Interrupt Service Routine)** a routine/program that tells cpu how to handle the interrupt
+- **Two types of interrupt**
+- **Vectored** (I/O device tells the address): This address is of ISR
+- **Non Vectored** (CPU knows the address, I/O device does not provide this information) 

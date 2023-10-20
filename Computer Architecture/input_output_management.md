@@ -68,4 +68,14 @@ Async: send a strobe to notify data request and ack to acknowledge data recieved
 - **ISR(Interrupt Service Routine)** a routine/program that tells cpu how to handle the interrupt
 - **Two types of interrupt**
 - **Vectored** (I/O device tells the address): This address is of ISR
-- **Non Vectored** (CPU knows the address, I/O device does not provide this information) 
+- **Non Vectored** (CPU knows the address, I/O device does not provide this information): CPU already knows ISR
+
+![Alt text](image-66.png)
+
+Interrupt based on priority, if 2 or more devices raise interrupt at the same time, then the device with highest priority gets the cpu
+usually priority decided by speed of the device.
+
+Devices are arranged in order of priority, when devices want to raise an interrupt, they place 0 in **Interrupt Service Register**
+since devices are arranged in order of priority, if any device raises interrupt, no need to check further.
+
+![Alt text](image-67.png)

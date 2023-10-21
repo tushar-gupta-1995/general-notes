@@ -79,3 +79,31 @@ Devices are arranged in order of priority, when devices want to raise an interru
 since devices are arranged in order of priority, if any device raises interrupt, no need to check further.
 
 ![Alt text](image-67.png)
+
+# Direct Memory Access
+
+DMA works on behalf of CPU
+
+![Alt text](image-70.png)
+
+- Device raises interrupt, reaches DMA
+- DMA requests bus from CPU
+- CPU grants bus
+- CPU meanwhile can continue executing the instruction
+
+**Burst Mode:** Processor gives control to DMA, and waits till DMA returns the control.
+
+**Cycle stealing mode** Consistent control not given, Grant Bus to DMA only when not requiring the bus.
+
+![Alt text](image-71.png)
+
+CPU could be doing following in a cpu cycle:
+- Instruction Decode
+- Intruction Execute
+- Instruction Fetch
+- Operand Fetch
+- Write Back Or Store Result
+
+In **Burst Mode** CPU waits till DMA finishes, in **Cycle Stealing mode** DMA can only have control in Instuction Decode and Instuction Execute phases.
+
+

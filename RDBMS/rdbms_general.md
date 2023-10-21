@@ -242,6 +242,14 @@ In essence transaction are a bunch of instructions combined together or bound to
 
 ![Alt text](image-47.png)
 
+### Read Timestamp:
+Whenever a transaction reads a data item, it assigns the entry point of the transaction to the data item
+so on a data item q, read timestamp is 16:52, then the transaction which last read q entered system at 16:52
+
+
+### Write Timestamp:
+Whenever a transaction writes a data item, it assigns the entry point of the transaction to the data item
+so on a data item q, write timestamp is 16:52, then the transaction which last wrote q entered system at 16:52
 
 ## Lock based method
 
@@ -253,3 +261,5 @@ While operating on the data item, lock it.
 ## Validation based method
 
 ![Alt text](image-49.png)
+
+

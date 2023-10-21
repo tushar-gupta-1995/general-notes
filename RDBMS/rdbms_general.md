@@ -238,6 +238,8 @@ In essence transaction are a bunch of instructions combined together or bound to
 
 ![Alt text](image-46.png)
 
+![Alt text](image-51.png)
+
 ## Timestamp based method
 
 ![Alt text](image-47.png)
@@ -245,6 +247,22 @@ In essence transaction are a bunch of instructions combined together or bound to
 ### Read Timestamp:
 Whenever a transaction reads a data item, it assigns the entry point of the transaction to the data item
 so on a data item q, read timestamp is 16:52, then the transaction which last read q entered system at 16:52
+
+![Alt text](image-50.png)
+
+- If  the entry time of transaction say T1, is less then timestamp assigned to dataset say Q, and it wants to read Q, then T1 is attempting to read a transaction that is overriden after it entered and thus does not offer isolation (a transaction should seemingly execute such that it is the only transaction)
+
+
+### Lock based
+
+![Alt text](image-52.png)
+
+- System model
+- Add a lock on data before doing any operation
+- perform the operation
+- release the lock 
+
+- If  the entry time of transaction say T1, is more then timestamp assigned to dataset say Q, and it wants to read Q, its allowed.
 
 
 ### Write Timestamp:

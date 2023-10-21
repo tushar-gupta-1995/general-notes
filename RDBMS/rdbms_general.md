@@ -292,5 +292,24 @@ for fifo its not starvation, but **convoy effect**
 
 ![Alt text](image-54.png)
 
+# Conservative 2pl
 
+![Alt text](image-56.png)
 
+- Acquire all locks first, therefore curcular wait wont be there.
+- suppose T1 wants dataset a and b, and T2 wants a and b, If T1 acquires a lock, it directly acquires both a and b, and not just 1.
+- so no circular wait and no deadlock.
+- although shrinking phase has 2 occur, since all locks acquires at once, and then you have to release all the locks once operations performed.
+- but does not provide a schedule to recovability
+
+# Rigorous 2pl
+
+![Alt text](image-57.png)
+ 
+ - no shrinking phase in rigorous 2pl, but locks can be acquired as late as possible
+ - the reason no shrinking phase, as locks held till commit..after commit transaction ends so lock does not remain..but locks not released by transaction itself
+ 
+
+# strict 2pl
+
+![Alt text](image-58.png)

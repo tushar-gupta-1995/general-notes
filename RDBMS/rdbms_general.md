@@ -252,16 +252,6 @@ so on a data item q, read timestamp is 16:52, then the transaction which last re
 
 - If  the entry time of transaction say T1, is less then timestamp assigned to dataset say Q, and it wants to read Q, then T1 is attempting to read a transaction that is overriden after it entered and thus does not offer isolation (a transaction should seemingly execute such that it is the only transaction)
 
-
-### Lock based
-
-![Alt text](image-52.png)
-
-- System model
-- Add a lock on data before doing any operation
-- perform the operation
-- release the lock 
-
 - If  the entry time of transaction say T1, is more then timestamp assigned to dataset say Q, and it wants to read Q, its allowed.
 
 
@@ -279,5 +269,28 @@ While operating on the data item, lock it.
 ## Validation based method
 
 ![Alt text](image-49.png)
+
+### Lock based
+
+![Alt text](image-52.png)
+
+- System model
+- Add a lock on data before doing any operation
+- perform the operation
+- release the lock 
+- But read-read dont clash, read-write do, so if two transactions reading the same data, they can do in parallel sharing the lock, so a write operation does not modify the data.
+- Is **Not Conflict Serialisable**
+**To avoid above point introduce two phase locking**
+
+![Alt text](image-53.png)
+
+
+**Important: STARVATION:** Long wait is NOT starvation, a fifo cannot **starve** regardless of the wait in fifo.
+but lifo can be starvation, because the first element enetered might have to wait if newer elements keep entering the stack.
+that is if processor is biased towards the latest processes or some priority thus not giving cpu cycle to older processes then its starvation.
+for fifo its not starvation, but **convoy effect**
+
+![Alt text](image-54.png)
+
 
 

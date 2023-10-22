@@ -106,4 +106,17 @@ CPU could be doing following in a cpu cycle:
 
 In **Burst Mode** CPU waits till DMA finishes, in **Cycle Stealing mode** DMA can only have control in Instuction Decode and Instuction Execute phases.
 
+# I/O devices
+
+## Memory Disk
+
+![Alt text](image-72.png)
+
+- Data is divided into tracks
+- tracks are further divided into sector
+- first seek track (seek time), then find sector (rotational latency), then transfer data(transfer time)
+
+![Alt text](image-73.png)
+
+
 

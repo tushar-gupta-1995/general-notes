@@ -85,4 +85,17 @@ or by writing 1 on the line from relation symbol to entity.
 
 ![Alt text](image-80.png)
 
-- for a 1:1 relation, no 3rd table to represent relation, just add a new column on the weak enrity key table for primary column of strong entiry, this becomes foreign key..(note since 1:1 the foreign key will not repeat more then once..it might not exist..but if it does it will be at max once.)
+# Number of tables for different cardinality of binary
+
+- for a 1:1 relation, **no 3rd table to represent relation required**, just add a new column on the weak enrity key table for primary column of strong entiry, this becomes foreign key..(note since 1:1 the foreign key will not repeat more then once..it might not exist..but if it does it will be at max once.)
+- for a 1:n relation, **no 3rd table to represent relation required**. entity a participates 1 time and entity b participates n times..so we can create a table for entity b and add a column with primary key for entity a.
+- for a m:n relation, create a seperate table with primary key of both entity a and entity nb
+
+![Alt text](image-81.png)
+
+![Alt text](image-82.png)
+- for ternary and >=2 ary just create seperate tables
+
+![Alt text](image-83.png)
+
+![Alt text](image-85.png)

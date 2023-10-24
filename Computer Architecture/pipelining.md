@@ -70,3 +70,5 @@ if n processes take different times, to complete all process in same clock cycle
 
 **Gate Question to show the slowest stage determines speed:**
 ![Alt text](image-102.png)
+
+**Also understand pipelined processor uses buffers, so that the staged circuit can directly pick up from output of previous stage, hence the time taken for a single instruction on pipelined processor is greater or equal to non pipelined BUT over time pipelined processor can have much better speed then non pipelined processor, the speed up having a theoretical limit of number of stages for which seperate circuit exist**

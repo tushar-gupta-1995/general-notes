@@ -56,3 +56,10 @@ in pipeline
  - first instruction takes m clock cycles where m is number of stage per instruction (usually 4 as above)
  - from second onwards take 1 clock cycle
  - in long run CPI for pipelining should be 1 (with exception of first instruction)
+
+
+# Understanding clock
+
+If a cpu is 1 Ghz, then it completes 10^9 clock cycle in a second, so to complete 1 clock cycle, it will take, 10 ^-9 seconds = 1 ns.
+if n processes take different times, to complete all process in same clock cycle, we just need to ensure that slowest process completes in 1 cs, and that will determine the min cpu frequency needed to complete a task.
+

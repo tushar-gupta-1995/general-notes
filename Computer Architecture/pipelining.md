@@ -51,3 +51,8 @@ in pipeline
 ![Alt text](image-92.png)
 
 ![Alt text](image-93.png)
+
+### CPI (clock per instruction) in pipelining
+ - first instruction takes m clock cycles where m is number of stage per instruction (usually 4 as above)
+ - from second onwards take 1 clock cycle
+ - in long run CPI for pipelining should be 1 (with exception of first instruction)

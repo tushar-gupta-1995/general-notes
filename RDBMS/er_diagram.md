@@ -1,8 +1,14 @@
+# Important Note WHEN creating set for cardinality
+**the one with many in er diagram line, pick many from set, th one with a "1", pick one from set**
+
+
+
 ![Alt text](image-60.png)
 
 ![Alt text](image-61.png)
 
 ![Alt text](image-62.png)
+
 
 # tuple
 row of the table

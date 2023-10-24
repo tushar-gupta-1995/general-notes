@@ -23,3 +23,31 @@
 ![Alt text](image-85.png)
 
 ![Alt text](image-86.png)
+
+Usually in a normal cpu, details of current instruction are stored in CPU register and then cpu in its clock does one of the following:
+(**NOTE:** each of the below takes 1 clock cycle)
+- fetch
+- decode
+- execute
+- store
+
+in pipeline 
+- there is seperate circuit for each of 4 phases in same processor, thus when decode is happening fetch can happen in parallel.
+
+
+# Sample pipelining question:
+
+
+![Alt text](image-89.png)
+
+## solution
+
+![Alt text](image-90.png)
+
+### formulae for pipelining
+
+![Alt text](image-91.png)
+
+![Alt text](image-92.png)
+
+![Alt text](image-93.png)

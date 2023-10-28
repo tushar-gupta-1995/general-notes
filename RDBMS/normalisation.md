@@ -48,5 +48,7 @@ then a->b will always hold..since its **obvious**
 
 
 
+# Armstrong axioms
 
+![Alt text](image-112.png)
 

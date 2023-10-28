@@ -24,3 +24,29 @@
 
 ![Alt text](image-97.png)
 
+# functional dependency
+if a->b, where b can derived from a, then b is functionally dependent on a.
+
+To prove a=>b
+if two or more values in a are same and output different b.
+in that case b is indipendent of a.
+
+![Alt text](image-104.png)
+
+![Alt text](image-103.png)
+# Trivial Functional Dependency:
+if b is subset of a such that a=(p,q,r)
+and b = (q)
+then a->b will always hold..since its **obvious**
+
+**Example** in option C, RHS is subset of LHS hence trivial.
+![Alt text](image-100.png)
+
+# Functional Dependency Closure
+
+![Alt text](image-108.png)
+
+
+
+
+

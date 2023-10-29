@@ -93,3 +93,11 @@ if n processes take different times, to complete all process in same clock cycle
 **Example of control hazard:** since in a pipelined processor instruction are executing parallely, suppose instruction 3 is executing, and its a if condition, instruction 4 and 5 are in fetch and decode stage parallely, once instruction 3 executed, next instructions are instruction 7 and 8 and Instruction 4 and 5 are never supposed to be executed, thus decoding and fetching 4 and 5 was a waste.
 Refer above image as well.
 
+so if an instruction's execution decides which instruction to run next and thus there is non determinism in deciding next instruction to decode, fetch impacting parallelism, then its called **control hazard**
+
+![Alt text](image-118.png)
+
+example in above: 80% take 1 Clock cycle
+20% take 3 stalls + 1 clock cycle=4
+0.8+0.2(0.4) = 1.6
+

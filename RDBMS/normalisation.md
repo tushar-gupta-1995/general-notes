@@ -46,9 +46,14 @@ then a->b will always hold..since its **obvious**
 
 ![Alt text](image-108.png)
 
+## Mininmal cover
 
+![Alt text](image-114.png)
 
 # Armstrong axioms
 
 ![Alt text](image-112.png)
+
+![Alt text](image-123.png)
+
 

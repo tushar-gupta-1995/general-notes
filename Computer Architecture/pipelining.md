@@ -101,3 +101,5 @@ example in above: 80% take 1 Clock cycle
 20% take 3 stalls + 1 clock cycle=4
 0.8+0.2(0.4) = 1.6
 
+
+![Alt text](image-119.png)

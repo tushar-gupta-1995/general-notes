@@ -72,3 +72,24 @@ if n processes take different times, to complete all process in same clock cycle
 ![Alt text](image-102.png)
 
 **Also understand pipelined processor uses buffers, so that the staged circuit can directly pick up from output of previous stage, hence the time taken for a single instruction on pipelined processor is greater or equal to non pipelined BUT over time pipelined processor can have much better speed then non pipelined processor, the speed up having a theoretical limit of number of stages for which seperate circuit exist**
+
+# Hazards:
+
+![Alt text](image-113.png)
+
+
+**if particular stages share memory, they cannot execute in parallel**
+![Alt text](image-114.png)
+
+![Alt text](image-115.png)
+
+## Control Hazards
+
+![Alt text](image-116.png)
+
+
+![Alt text](image-117.png)
+
+**Example of control hazard:** since in a pipelined processor instruction are executing parallely, suppose instruction 3 is executing, and its a if condition, instruction 4 and 5 are in fetch and decode stage parallely, once instruction 3 executed, next instructions are instruction 7 and 8 and Instruction 4 and 5 are never supposed to be executed, thus decoding and fetching 4 and 5 was a waste.
+Refer above image as well.
+

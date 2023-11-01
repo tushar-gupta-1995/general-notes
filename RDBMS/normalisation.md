@@ -56,4 +56,25 @@ then a->b will always hold..since its **obvious**
 
 ![Alt text](image-123.png)
 
+# types of keys
 
+![Alt text](image-117.png)
+
+# KEY: Any key is a set of attributes(remember attributes=columns)
+# Super Key: Set of attributes whose closure covers all attributes (remember attributes=columns)
+
+![Alt text](image-118.png) 
+
+![Alt text](image-121.png)
+
+# candidate key: minimal set of attributes required to represent a row..that is a candidate key cannot be further broken
+
+# primary key
+
+![Alt text](image-122.png)
+
+# Foreign key can ALSO be in the same table as primary key, that is it can refer to the primary key in same table, Example:
+- CR is a person amongst the roll numbers
+- if i dlete roll number 1 and roll number 1 is the CR, it does not make sense, hence both PK and FK in same table
+- Remember FK exists because of the primary key reference...if primary key reference CAN only be removed if FK constraints are removed.
+![Alt text](image-125.png)

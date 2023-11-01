@@ -77,4 +77,10 @@ then a->b will always hold..since its **obvious**
 - CR is a person amongst the roll numbers
 - if i dlete roll number 1 and roll number 1 is the CR, it does not make sense, hence both PK and FK in same table
 - Remember FK exists because of the primary key reference...if primary key reference CAN only be removed if FK constraints are removed.
+
 ![Alt text](image-125.png)
+
+# Remember one table can have more then 1 foreign key example, in a m:n relation we form a 3rd table with PK of both entities..so it has 2 foreign keys
+
+![Alt text](image-126.png)
+

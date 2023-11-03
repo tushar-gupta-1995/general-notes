@@ -103,3 +103,21 @@ example in above: 80% take 1 Clock cycle
 
 
 ![Alt text](image-119.png)
+
+
+# Prediction of next statements
+
+- usually in loops statement execute multiple times
+- therefore if we identify a loop, we can load the instructions for loop in pipeline
+- it is probable that they will be the next statements to execute
+- if the loop terminates, we will incur a stall, but its an acceptable stall if loop executes multiple times
+
+![Alt text](image-124.png)
+
+![Alt text](image-126.png)
+
+# Data hazards
+
+![Alt text](image-127.png)
+
+![Alt text](image-128.png)

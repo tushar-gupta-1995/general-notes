@@ -16,3 +16,7 @@
 
 **answer to above:** d
 
+## Instruction set
+- represents how many types of instructions can  be run by a machine
+- in other words how many different opcodes are there.
+

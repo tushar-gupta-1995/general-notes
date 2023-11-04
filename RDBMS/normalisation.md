@@ -84,3 +84,11 @@ then a->b will always hold..since its **obvious**
 
 ![Alt text](image-126.png)
 
+# foreign key reference a primary key..foreign key is a subset of primary key they reference//
+
+**Given fk -> pk**
+- pk is superset of fk
+- pk can be added without constraint
+- fk can be removed without constraint
+- pk cannot be removed without deleting all fk referencs first
+- fk cannot be added without adding a pk which it refers to

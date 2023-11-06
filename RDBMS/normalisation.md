@@ -92,3 +92,5 @@ then a->b will always hold..since its **obvious**
 - fk can be removed without constraint
 - pk cannot be removed without deleting all fk referencs first
 - fk cannot be added without adding a pk which it refers to
+
+![Alt text](image-133.png)

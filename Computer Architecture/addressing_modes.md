@@ -34,6 +34,6 @@
 
 ![Alt text](image-148.png)
 
-# Direct Mode: Instruction contains address of operand
+# Direct/Absolute.Effective Mode: Instruction contains address of operand
 
 ![Alt text](image-150.png)

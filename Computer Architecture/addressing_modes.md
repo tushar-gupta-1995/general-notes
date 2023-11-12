@@ -20,3 +20,20 @@
 - represents how many types of instructions can  be run by a machine
 - in other words how many different opcodes are there.
 
+
+# Criteria for addressing modes
+![Alt text](image-145.png)
+
+# Immediate Mode: Instruction contains operand
+
+![Alt text](image-146.png)
+
+## Advantages:
+
+![Alt text](image-147.png)
+
+![Alt text](image-148.png)
+
+# Direct Mode: Instruction contains address of operand
+
+![Alt text](image-150.png)

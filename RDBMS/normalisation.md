@@ -94,3 +94,8 @@ then a->b will always hold..since its **obvious**
 - fk cannot be added without adding a pk which it refers to
 
 ![Alt text](image-133.png)
+
+
+# secondary key 
+
+![Alt text](image-139.png)

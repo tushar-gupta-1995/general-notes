@@ -68,7 +68,7 @@
  ![Alt text](image-163.png)
 
 
- # Base Register
+ # Base Register: Useful for relocation of program in multiprogrammed environment
 
  ![Alt text](image-165.png)
 
@@ -77,3 +77,20 @@
  - ALU adds offset to base to get operand for current instruction
 
  ![Alt text](image-166.png)
+
+ ![Alt text](image-168.png) 
+
+ ans base
+
+ **Base Register** is the base address of process and offset is also offset of the process
+ but **Index Register** is the base address of data structure like array
+
+ ![Alt text](image-169.png)
+
+ ans index
+
+# Relative Addressing mode
+
+![Alt text](image-171.png)
+
+

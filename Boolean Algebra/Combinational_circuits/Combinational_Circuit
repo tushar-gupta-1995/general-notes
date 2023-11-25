@@ -1,4 +1,5 @@
 Decoder : takes n bit input and generates all possible 2^n output, one bit enabler to enable disable the circuit
+**sits on top of address to decode instruction**
 
 Encoder : takes 2^n bits input and generates a n bit output, one bit enabler to enable disable the circuit
 

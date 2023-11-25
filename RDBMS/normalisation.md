@@ -99,3 +99,37 @@ then a->b will always hold..since its **obvious**
 # secondary key 
 
 ![Alt text](image-139.png)
+
+# Normalisation
+
+![Alt text](image-148.png)
+
+## First normal form
+
+![Alt text](image-149.png)
+
+![Alt text](image-154.png)
+
+## Second normal form
+
+![Alt text](image-155.png)
+
+### Transitive dependency
+
+if a non prime attribute is functionally dependent on another non prime attribute
+
+![Alt text](image-157.png)
+
+## Third normal form
+
+![Alt text](image-158.png)
+
+![Alt text](image-159.png)
+
+![Alt text](image-162.png)
+
+In summary
+
+- **2nf**: partial dependency, part of prime attribute identifies non prime..when prime is composite
+- **3nf**: transitive dependency, non prime attribute identifies another non prime attribute
+

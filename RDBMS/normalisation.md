@@ -177,3 +177,15 @@ Even though BCNF is satisfied and therefore 1,2,3nf are satisfied as well, multi
 So if a table R is decomposed into R1 and R2 and on joining i get R3, if R3=R then its lossless
 if R3 is subset or superset of R then its a lossy decomposition.
 
+**ALSO if decomposed table has no column in common that decomposition is always lossy**
+
+**AlSO IF A COLUMN IS MISSING FROM INITIAL TABLE IN DECOMPOSED TABLE, THAT IS IF R HAS COLUMN NEITHER IN R2 AND R3, ITS LOSSY**
+
+![Alt text](image-179.png)
+
+**RULE TO ENSURE LOSSLESS**
+- AT LEAST ONE COMMON COLUMN IN BOTH TABLES
+- ALL COLUMNS FROM ORIGINAL DECOMPOSED TABLE INCLUDED IN NORMALISED TABLES
+- THE COMMON COLUMN SHOULD ACT AS A KEY IN AT LEAST ONE OF THE NORMALISED TABLES
+
+

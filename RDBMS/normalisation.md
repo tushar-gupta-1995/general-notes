@@ -132,4 +132,48 @@ In summary
 
 - **2nf**: partial dependency, part of prime attribute identifies non prime..when prime is composite
 - **3nf**: transitive dependency, non prime attribute identifies another non prime attribute
+- **bcnf**: LHS in fd, must always be a super key, that is if a->b, then a MUST be a superkey, ****therefore, if there are only 2 attributes they are always in bcnf**
+
+**Remember** prime attribute is that attribute that is part of candidate key.
+
+## BCNF
+
+![Alt text](image-163.png)
+
+**There can be redundancy in bcnf but it cannot be redundancy due to Functional dependency**
+
+
+# Multi valued Dependency
+
+a->b
+b can be identified from a
+
+a->->b
+multiple values of b can be identified from a
+
+![Alt text](image-168.png)
+
+**Example: student -> phone number is a multi valued dependency, one student can have multiple numbers**
+
+In the below image, table is in bcnf as all rows are unique, all columns combined form the candidate key, and they together identify all attributes.
+Even though BCNF is satisfied and therefore 1,2,3nf are satisfied as well, multivalued dependency is causing redundancy.
+![Alt text](image-169.png)
+
+## 4nf
+![Alt text](image-170.png)
+
+![Alt text](image-171.png)
+
+![Alt text](image-172.png)
+
+## Dependency preserving decomposition
+
+![Alt text](image-176.png)
+
+![Alt text](image-177.png)
+
+![Alt text](image-178.png)
+
+So if a table R is decomposed into R1 and R2 and on joining i get R3, if R3=R then its lossless
+if R3 is subset or superset of R then its a lossy decomposition.
 
